@@ -10,7 +10,7 @@
   <img width="700" align="center" src="./public/gif/readme.gif" alt="demo"/>   
 </p> -->
 
-<!-- ![Alt text](https://giphy.com/peekasso) 
+<!-- ![Alt text](https://giphy.com/peekassooo) 
 
 <hr> -->
 
