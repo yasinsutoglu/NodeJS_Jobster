@@ -29,10 +29,10 @@
 ### The project covers;
 
 - Javascript
--NodeJS, ExpressJS
--MongoDB
--SwaggerUI
--Render Deployment
+- NodeJS, ExpressJS
+- MongoDB
+- SwaggerUI
+- Render Deployment
 
 ### At the end of the project, i will be able to;
 
