@@ -106,7 +106,7 @@ npm install
 ```
 
 - create .env and provide correct values
-- you can copy from previous project (just change the DB name)
+- you can create a new DB with jobster name
 
 .env
 
