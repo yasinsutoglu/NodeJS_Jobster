@@ -23,13 +23,11 @@ const getAllJobs = async (req, res) => {
   }
 
   // NO AWAIT
-
   let result = Job.find(queryObject);
 
   // chain sort conditions
-
-  if (sort === "latest") {
-    result = result.sort("-createdAt");
+  if (sort === "latest") { 
+    result = result.sort("-createdAt"); //? "-" means that reverse of the sort
   }
   if (sort === "oldest") {
     result = result.sort("createdAt");
@@ -41,7 +39,6 @@ const getAllJobs = async (req, res) => {
     result = result.sort("-position");
   }
 
-
   // setup pagination
   const page = Number(req.query.page) || 1;
   const limit = Number(req.query.limit) || 10;
@@ -51,7 +48,7 @@ const getAllJobs = async (req, res) => {
 
   const jobs = await result;
 
-  const totalJobs = await Job.countDocuments(queryObject);
+  const totalJobs = await Job.countDocuments(queryObject); //? countDocuments() is a special method for mongoDB
   const numOfPages = Math.ceil(totalJobs / limit);
 
   res.status(StatusCodes.OK).json({ jobs, totalJobs, numOfPages });
