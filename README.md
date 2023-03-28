@@ -98,7 +98,7 @@ The starter is a copy of jobs-api final project, just with additional data.
 
 #### Setup
 
-- navigate to 06.5-jobster-api/starter
+- navigate to Jobster/backend
 - install dependencies
 
 ```sh
