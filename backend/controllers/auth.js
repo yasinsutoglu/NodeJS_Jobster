@@ -45,9 +45,12 @@ const login = async (req, res) => {
 
 const updateUser = async (req, res) => {
   const { email, name, lastName, location } = req.body;
+  console.log(req.user)
+
   if (!email || !name || !lastName || !location) {
     throw new BadRequestError("Please provide all values");
   }
+  
   const user = await User.findOne({ _id: req.user.userId });
 
   user.email = email;
